@@ -1,0 +1,91 @@
+  /* Banner area */
+    .header-banner {
+      background-color: #000203;
+      padding: 20px 0;
+    }
+
+    /* Logos */
+    .college-logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .anniversary-logo {
+      width: 140px;
+      height: auto;
+    }
+
+    /* Text styling */
+    .college-info {
+      color: white;
+      text-align: center;
+    }
+
+    .college-info h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: yellow;
+    }
+
+    .college-info h3 {
+      font-size: 1rem;
+      margin: 2px 0;
+    }
+
+    .college-info h2 {
+      color: deepskyblue;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .college-info h1 {
+        font-size: 1.2rem;
+      }
+      .college-info h2 {
+        font-size: 1rem;
+      }
+      .anniversary-logo {
+        width: 80px;
+      }
+      .college-logo {
+        width: 70px;
+      }
+    }
+
+
+
+     /* Keep logo size consistent */
+    .logo-img {
+      height: 80px;
+    }
+
+    /* Center logo in mobile view */
+    @media (max-width: 991px) {
+      .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+
+ .card img {
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* STAFFS PAGE */
+  .staff-card {
+    transition: transform 0.3s ease;
+  }
+  .staff-card:hover {
+    transform: scale(1.05);
+  }
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
