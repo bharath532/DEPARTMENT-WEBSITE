@@ -1,28 +1,33 @@
-  /* Banner area */
-    .header-banner {
-      background-color: #000203;
-      padding: 20px 0;
-    }
+.header-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+}
 
-    /* Logos */
-    .college-logo {
-      width: 100px;
-      height: auto;
-    }
+/* Default logo styles */
+.college-logo,
+.anniversary-logo {
+  max-height: 70px;
+}
 
-    .anniversary-logo {
-      width: 140px;
-      height: auto;
-    }
+/* Mobile view */
+@media (max-width: 768px) {
+  .college-info {
+    order: 3;           /* move text below logos */
+    text-align: center; /* center the college name */
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    @media (max-width: 768px) {
+  .college-logo {
+    order: 1;  /* stays left */
+  }
+
   .anniversary-logo {
-    display: block;
-    position: fixed;
-    top: 10px;     /* distance from top */
-    right: 10px;   /* distance from right */
-    height: 90px;  /* logo size */
-    z-index: 1000; 
+    order: 2;  /* moves to right */
+    margin-left: auto; /* pushes to right corner */
   }
 }
 
