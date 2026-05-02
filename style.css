@@ -1,4 +1,4 @@
-.header-banner .container {
+.header-banner .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
